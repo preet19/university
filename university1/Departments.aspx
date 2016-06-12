@@ -16,7 +16,7 @@
                 </asp:DropDownList>
 
                 <asp:GridView runat="server" CssClass="table table-bordered table-striped table-hover" 
-                    ID="DepartmentGridView" AutoGenerateColumns="false" DataKeyNames="DepartmentID" OnRowDeleting="DepartmentGridView_RowDeleting"
+                    ID="DepartmentGridView" AutoGenerateColumns="false" DataKeyNames="DepartmentID" 
                     AllowPaging="true" PageSize="3" OnPageIndexChanging="DepartmentGridView_PageIndexChanging"
                     AllowSorting="true" OnSorting="DepartmentGridView_Sorting" OnRowDataBound="DepartmentGridView_RowDataBound">
                     <Columns>
