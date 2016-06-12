@@ -27,9 +27,7 @@
                         <asp:HyperLinkField HeaderText="Edit" Text="<i class='fa fa-pencil-square-o fa-lg'></i> Edit" NavigateUrl="~/DepartmentDetails.aspx.cs"
                             DataNavigateUrlFields="DepartmentID" DataNavigateUrlFormatString="DepartmentDetails.aspx?DepartmentID={0}" 
                             ControlStyle-CssClass="btn btn-primary btn-sm"/>
-                        <asp:CommandField HeaderText="Delete" DeleteText="<i class='fa fa-trash-o fa-lg'></i> Delete" ShowDeleteButton="true"
-                            ButtonType="Link" ControlStyle-CssClass="btn btn-danger btn-sm" />
-                    </Columns>
+                     </Columns>
                 </asp:GridView>
             </div>
         </div>

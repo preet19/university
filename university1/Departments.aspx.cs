@@ -51,30 +51,7 @@ namespace university1
             }
         }
 
-        protected void DepartmentGridView_RowDeleting(object sender, GridViewDeleteEventArgs e)
-        {
-            // store which row was clicked
-            int selectedRow = e.RowIndex;
-
-            // get the selected StudentID using the Grid's DataKey Collection
-            int DepartmentID = Convert.ToInt32(DepartmentGridView.DataKeys[selectedRow].Values["DepartmentID"]);
-
-            // use EF to find the selected student from DB and remove it
-            using (DefaultConnection db = new DefaultConnection())
-            {
-                Department deletedDepartment = (from DepartmentRecords in db.Departments
-                                                where DepartmentRecords.DepartmentID == DepartmentID
-                                                select DepartmentRecords).FirstOrDefault();
-
-                // perform the removal in the DB
-                db.Departments.Remove(deletedDepartment);
-                db.SaveChanges();
-
-                // refresh the grid
-                this.GetDepartment();
-
-            }
-        }
+        
 
         protected void DepartmentGridView_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
