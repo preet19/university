@@ -48,7 +48,7 @@ namespace university1
         protected void CancelButton_Click(object sender, EventArgs e)
         {
             // Redirect back to Students page
-            Response.Redirect("~/Department.aspx");
+            Response.Redirect("~/Departments.aspx");
         }
 
         protected void SaveButton_Click(object sender, EventArgs e)
